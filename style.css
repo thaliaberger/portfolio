@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+
+@keyframes seta {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+body {
+  background-color: #59405c;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 600px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #ffd4d3;
+  margin: 0 50px 0 50px;
+}
+
+.header a:hover {
+  color: #b52b65;
+}
+
+.header p {
+  display: flex;
+  margin-top: 50px;
+}
+
+h1 {
+  color: #ffd4d3;
+  font-size: 3em;
+  font-weight: 100;
+  letter-spacing: 10px;
+  margin: 60px 0 60px 20px;
+}
+
+h4 {
+  color: #b52b65;
+  font-size: 5em;
+  background-color: #3c2c3e;
+  margin: 0 0;
+  padding: 0 20px;
+  font-family: "Hammersmith One", sans-serif;
+}
+
+/* SOBRE */
+
+.tag span {
+  color: #b52b65;
+  background-color: #3c2c3e;
+  font-size: 1.5em;
+  font-family: "Hammersmith One", sans-serif;
+  margin-left: 20px;
+}
+
+.tags {
+  display: flex;
+}
+
+.sobre-title {
+  color: #ffd4d3;
+  font-size: 2em;
+  font-weight: lighter;
+  letter-spacing: 6px;
+}
+
+.sobre {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 6em;
+}
+
+.sobre-p {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  width: 700px;
+  color: #ffd4d3;
+  font-size: 1.2em;
+  background-color: #3c2c3e;
+  padding: 30px 50px;
+}
+
+.sobre img {
+  width: 180px;
+  height: 180px;
+}
+
+/* PROJETOS */
+
+.projetos-title {
+  color: #ffd4d3;
+  font-size: 2em;
+  font-weight: lighter;
+  letter-spacing: 6px;
+}
+
+.projetos-info a,
+p {
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  width: 320px;
+}
+
+.about-project p {
+  height: 70px;
+  color: #ffd4d3;
+  margin: 0 0;
+}
+
+.projetos-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10em;
+}
+
+.projetos-info img {
+  width: 350px;
+  height: 180px;
+}
+
+.projeto {
+  margin: 50px 90px 60px 90px;
+  max-width: 350px;
+  transition: 0.5s ease-in-out;
+}
+
+.single-project {
+  display: flex;
+  background-color: #3c2c3e;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+}
+
+.projetos-row {
+  display: flex;
+}
+
+/* ICONS */
+
+.wrapper {
+  position: absolute;
+}
+
+.wrapper ul {
+  position: fixed;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+}
+
+.wrapper ul li {
+  width: 65px;
+  height: 65px;
+  margin-right: 50px;
+  margin-top: 60px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid #3c2c3e;
+  background-color: #3c2c3e;
+  float: left;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li .fa {
+  color: #ffd4d3;
+  margin-top: 16px;
+  transform: scale(0.9);
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa {
+  transform: scale(1.2);
+}
+
+.chevron i {
+  animation: seta 0.5s ease-in 0s infinite alternate;
+}
+
+/* OVERLAY */
+
+.overlay--pseudo-elements {
+  position: relative;
+}
+
+.overlay--pseudo-elements:before {
+  content: "";
+  background-color: rgba(60, 44, 62, 0.9);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: 0.6s all;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay--pseudo-elements:hover:before {
+  opacity: 1;
+}
+
+.demo {
+  color: #ffd4d3;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -160px;
+  top: 35%;
+  transition: 0.6s all;
+  font-family: "Hammersmith One", sans-serif;
+}
+
+.demo a {
+  color: #ffd4d3;
+  background-color: #59405c;
+  font-size: 1.4em;
+}
+
+.overlay--pseudo-elements:hover .demo {
+  opacity: 1;
+}
+
+/* media queries */
+
+@media screen and (max-width: 640px) {
+  .wrapper {
+    width: 350px;
+  }
+  .wrapper ul li {
+    margin-top: 10px;
+  }
+  .wrapper ul li.google {
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .wrapper {
+    width: 150px;
+  }
+  .wrapper ul li {
+    margin: 15px;
+  }
+  .wrapper ul li.google {
+    margin-left: 15px;
+  }
+}
