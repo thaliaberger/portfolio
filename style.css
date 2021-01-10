@@ -35,11 +35,12 @@ body {
   font-size: 1.2em;
   text-decoration: none;
   color: #ffd4d3;
-  margin: 0 50px 0 50px;
+  margin: 0 0 0 40px;
 }
 
 .header a:hover {
   color: #b52b65;
+  cursor: pointer;
 }
 
 .header p {
@@ -96,7 +97,7 @@ h4 {
   display: flex;
   align-items: center;
   text-align: start;
-  width: 700px;
+  width: 620px;
   color: #ffd4d3;
   font-size: 1.2em;
   background-color: #3c2c3e;
@@ -104,8 +105,8 @@ h4 {
 }
 
 .sobre img {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 160px;
 }
 
 /* PROJETOS */
@@ -180,8 +181,8 @@ p {
 .wrapper ul li {
   width: 65px;
   height: 65px;
-  margin-right: 50px;
-  margin-top: 60px;
+  margin-right: 40px;
+  margin-top: 30px;
   text-align: center;
   cursor: pointer;
   border-radius: 50%;
@@ -202,8 +203,13 @@ p {
   transform: scale(1.2);
 }
 
-.chevron i {
+.arrow i {
   animation: seta 0.5s ease-in 0s infinite alternate;
+}
+
+.wrapper .arrow {
+  border: 5px solid #59405c;
+  background-color: #59405c;
 }
 
 /* OVERLAY */

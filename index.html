@@ -4,14 +4,19 @@
     <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type" />
     <link rel="stylesheet" href="style.css" />
     <title>Thalía Berger</title>
+    <link
+      rel="shortcut icon"
+      href="./images/code-slash.svg"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <div class="header">
       <h1>THALÍA <br />BERGER</h1>
       <h4>full stack <br />web developer</h4>
       <p>
-        <a href="#" id="sobre">SOBRE</a>
-        <a href="#" id="projetos">PROJETOS</a>
+        <a id="sobre">SOBRE</a>
+        <a id="projetos">PROJETOS</a>
       </p>
     </div>
     <link
@@ -23,6 +28,9 @@
 
     <div class="wrapper">
       <ul>
+        <li style="opacity: 0" id="chevron" class="chevron">
+          <i class="fa fa-chevron-up fa-2x"></i>
+        </li>
         <li>
           <a href="https://www.linkedin.com/in/thaliaberger/" target="_blank"
             ><i class="fa fa-linkedin fa-2x"></i
@@ -34,10 +42,12 @@
           ></a>
         </li>
         <li class="mail">
-          <i class="fa fa-envelope fa-2x"></i>
+          <a href="mailto:berger.thalia@gmail.com">
+            <i class="fa fa-envelope fa-2x"></i>
+          </a>
         </li>
-        <li style="display: none" id="chevron" class="chevron">
-          <i class="fa fa-chevron-down fa-2x"></i>
+        <li style="display: none" class="arrow" id="arrow">
+          <i class="fa fa-arrow-down fa-2x"></i>
         </li>
       </ul>
     </div>
@@ -49,12 +59,11 @@
           <p class="tag"><span>Florianópolis</span></p>
         </div>
         <p class="sobre-p">
-          Após 3 anos trabalhando como Comissária de Voo, vi no caos da pandemia
-          uma oportunidade para mudar de carreira e trabalhar com algo que eu
-          amo. Fiz um Bootcamp de Web Development na IRONHACK, e agora procuro
-          minha primeira oportunidade de trabalho na área. Apesar da formação
-          Full Stack, me identifico especialmente com Frontend, e pretendo me
-          dedicar a esta área.
+          Após 3 anos atuando como Comissária de Voo, resolvi mudar de carreira
+          e trabalhar com algo que amo. Fiz um Bootcamp de Web Development, e
+          agora procuro minha primeira oportunidade na área.<br />
+          Apesar da formação Full Stack, me identifico particularmente com
+          Frontend, e pretendo me dedicar a esta área.
           <a
             href="https://www.credential.net/afca3479-14b6-4506-aff6-f41d218921ea"
             target="_blank"
@@ -184,7 +193,7 @@
 
               <a
                 target="_blank"
-                href="https://thaliaberger.github.io/CoronAvoid/"
+                href="https://github.com/thaliaberger/CoronAvoid"
                 ><i class="fa fa-github fa-2x"></i
               ></a>
             </p>
