@@ -119,7 +119,13 @@ p {
   width: 320px;
 }
 
+.about-project span {
+  padding: 0 15px;
+}
+
 .about-project p {
+  display: flex;
+  align-items: center;
   height: 70px;
   color: #ffd4d3;
   margin: 0 0;
