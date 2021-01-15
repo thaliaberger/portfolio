@@ -134,6 +134,7 @@ p {
 .projetos-info {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   margin-top: 10em;
 }
@@ -158,8 +159,9 @@ p {
   width: 350px;
 }
 
-.projetos-row {
-  display: flex;
+.projetos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 /* ICONS */
@@ -289,10 +291,9 @@ p {
     margin: 0 5px;
   }
 
-  .projetos-row {
-    flex-direction: column;
+  .projetos {
+    grid-template-columns: 1fr;
     justify-content: center;
-    align-items: center;
     width: 200px;
   }
 
@@ -413,8 +414,9 @@ p {
   .wrapper ul li {
     margin: 0 5px;
   }
-  .projetos-row {
-    flex-direction: column;
+  .projetos {
+    grid-template-columns: 1fr;
+    justify-content: center;
     width: 200px;
   }
 
