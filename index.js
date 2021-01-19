@@ -25,7 +25,7 @@ window.onload = () => {
     };
   } else {
     document.getElementById("sobre").onclick = () => {
-      window.scrollTo({ top: 600, behavior: "smooth" });
+      window.scrollTo({ top: 650, behavior: "smooth" });
     };
   }
 

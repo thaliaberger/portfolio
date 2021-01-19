@@ -129,7 +129,7 @@ h4 {
   font-size: 2em;
   font-weight: lighter;
   letter-spacing: 6px;
-  margin: 60px 0 20px 0;
+  margin: 60px 660px 20px 0;
 }
 
 .projetos-info a,
@@ -165,7 +165,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 10em 7em 5em 7em;
+  margin: 10em 8em 5em 0;
   background-color: #3c2c3e;
 }
 
@@ -323,7 +323,7 @@ p {
   .projetos {
     grid-template-columns: 1fr;
     justify-content: center;
-    width: 200px;
+    width: 300px;
   }
 
   .sobre-p {
@@ -343,18 +343,17 @@ p {
   }
 
   .projetos-info img {
-    width: 300px;
-    height: 180px;
+    width: 400px;
+    height: 240px;
   }
 
   h1 {
-    font-size: 1.5em;
-    letter-spacing: 10px;
+    font-size: 2em;
     margin: 100px 0 10px 20px;
   }
 
   h4 {
-    font-size: 2em;
+    font-size: 3em;
     padding: 0 20px;
   }
   .header p {
@@ -363,12 +362,12 @@ p {
   }
 
   .header a {
-    font-size: 1em;
+    font-size: 1.5em;
     margin: 0 10px 0 10px;
   }
 
   .single-project {
-    width: 300px;
+    width: 400px;
     margin: 0;
   }
 
@@ -378,10 +377,14 @@ p {
     margin: 10px 0;
   }
 
+  .projetos-title {
+    margin-right: 170px;
+  }
+
   .projetos-info a,
   p {
-    font-size: 11px;
-    width: 300px;
+    font-size: 15px;
+    width: 400px;
   }
   .about-project span {
     padding: 0 15px;
@@ -389,7 +392,7 @@ p {
   .about-project p {
     display: flex;
     align-items: center;
-    height: 50px;
+    width: 400px;
   }
 
   .wrapper ul li {
@@ -414,17 +417,161 @@ p {
   .me {
     position: absolute;
     right: 200px;
-    top: 500px;
+    top: 600px;
     width: 300px;
   }
 
   .tags {
     right: 490px;
-    top: 550px;
+    top: 600px;
   }
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 900px) {
+  .me {
+    right: 10px;
+    top: 750px;
+    width: 250px;
+  }
+
+  .tags {
+    right: 250px;
+    top: 750px;
+  }
+
+  .header a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #ffd4d3;
+    margin: 0 10px 0 10px;
+  }
+
+  .header p {
+    display: flex;
+    margin: 50px 0 0 45px;
+    width: 500px;
+  }
+
+  h1 {
+    color: #ffd4d3;
+    font-size: 3em;
+    font-weight: 100;
+    letter-spacing: 10px;
+    margin: 60px 0 60px 20px;
+  }
+
+  h4 {
+    font-size: 5.2em;
+  }
+
+  .sobre-title {
+    color: #ffd4d3;
+    font-size: 2em;
+    font-weight: lighter;
+    letter-spacing: 6px;
+    margin: 10px 0;
+  }
+
+  .sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15em;
+    background-color: #3c2c3e;
+    padding: 30px 0;
+    width: 80%;
+  }
+
+  .sobre-column {
+    margin-right: 150px;
+  }
+
+  .sobre-p {
+    width: 300px;
+    padding: 10px 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  .me {
+    right: 50px;
+    top: 550px;
+    width: 200px;
+  }
+
+  .tags {
+    right: 230px;
+    top: 550px;
+  }
+
+  .header a {
+    font-size: 0.6em;
+  }
+
+  .projetos-info {
+    margin: 10em 2em 5em 2em;
+  }
+
+  .sobre-column {
+    margin-right: 150px;
+  }
+
+  .sobre-p {
+    width: 200px;
+    padding: 10px 0;
+  }
+
+  h1 {
+    font-size: 1em;
+    margin: 60px 0 20px 30px;
+  }
+
+  h4 {
+    font-size: 2em;
+  }
+
+  .single-project {
+    width: 300px;
+    margin: 0;
+  }
+
+  .sobre-title,
+  .projetos-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+
+  .projetos-title {
+    margin-right: 120px;
+  }
+
+  .projetos-info a,
+  p {
+    font-size: 15px;
+    width: 300px;
+  }
+  .about-project span {
+    padding: 0 15px;
+  }
+  .about-project p {
+    width: 300px;
+  }
+
+  .projetos .tag span {
+    font-size: 1.3em;
+    margin-left: 0px;
+  }
+
+  .projeto {
+    margin: 20px 0px 20px 00px;
+  }
+
+  .projetos-info img {
+    width: 300px;
+    height: 140px;
+  }
+}
+@media screen and (max-width: 400px) {
   .wrapper ul {
     padding-top: 10px;
     display: flex;
@@ -452,16 +599,26 @@ p {
     width: 200px;
   }
 
-  .sobre-container {
+  .sobre-column {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 0px;
   }
 
   .sobre-p {
-    width: 250px;
-    font-size: 0.8em;
-    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    width: 200px;
+    color: #e7bbd5;
+    letter-spacing: 1px;
+    padding: 10px 0;
+  }
+
+  .me {
+    right: 20px;
+    top: 400px;
+    width: 150px;
   }
 
   .tag span {
@@ -469,7 +626,16 @@ p {
     margin-left: 0px;
   }
 
+  .tags {
+    right: 150px;
+    top: 400px;
+  }
+
   .projeto {
     margin: 50px 0px 60px 00px;
+  }
+
+  .projetos-info {
+    margin: 10em 1em 5em 1em;
   }
 }
