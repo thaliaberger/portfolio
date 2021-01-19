@@ -9,7 +9,7 @@ function handleScroll() {
     ? (chevron.style.opacity = "0")
     : (chevron.style.opacity = "1");
 
-  doc.scrollTop > 1100 && doc.scrollTop < 1800
+  doc.scrollTop > 1100 && doc.scrollTop < 2400
     ? (arrow.style.display = "block")
     : (arrow.style.display = "none");
 }
@@ -35,7 +35,7 @@ window.onload = () => {
     };
   } else {
     document.getElementById("projetos").onclick = () => {
-      window.scrollTo({ top: 1250, behavior: "smooth" });
+      window.scrollTo({ top: 1300, behavior: "smooth" });
     };
   }
 

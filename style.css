@@ -2,6 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
 @keyframes seta {
   from {
     transform: scale(0.9);
@@ -60,16 +62,22 @@ h4 {
 
 /* SOBRE */
 
-.tag span {
-  color: #b52b65;
-  background-color: #3c2c3e;
-  font-size: 1.5em;
+.tags span {
+  color: #3c2c3e;
+  background-color: #b52b65;
+  font-size: 1.2em;
   font-family: "Hammersmith One", sans-serif;
-  margin-left: 20px;
+  margin: 0;
+}
+
+.tags p {
+  text-align: end;
 }
 
 .tags {
-  display: flex;
+  position: absolute;
+  right: 540px;
+  top: 750px;
 }
 
 .sobre-title {
@@ -77,29 +85,41 @@ h4 {
   font-size: 2em;
   font-weight: lighter;
   letter-spacing: 6px;
+  margin: 10px 0;
 }
 
 .sobre {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 15em;
+  background-color: #3c2c3e;
+  padding: 30px 0;
+  width: 80%;
+}
+
+.sobre-column {
+  display: flex;
   flex-direction: column;
-  margin-top: 6em;
+  align-items: flex-start;
+  margin-right: 300px;
 }
 
 .sobre-p {
-  display: flex;
   align-items: center;
   text-align: start;
-  width: 620px;
-  color: #ffd4d3;
-  font-size: 1.2em;
-  background-color: #3c2c3e;
-  padding: 30px 50px;
+  width: 400px;
+  color: #e7bbd5;
+  letter-spacing: 1px;
+  padding: 10px 0;
 }
 
-.sobre img {
-  width: 150px;
-  height: 160px;
+.me {
+  position: absolute;
+  right: 200px;
+  top: 700px;
+  width: 350px;
 }
 
 /* PROJETOS */
@@ -109,6 +129,7 @@ h4 {
   font-size: 2em;
   font-weight: lighter;
   letter-spacing: 6px;
+  margin: 60px 0 20px 0;
 }
 
 .projetos-info a,
@@ -123,11 +144,19 @@ p {
   padding: 0 15px;
 }
 
+.projetos .tag span {
+  color: #3c2c3e;
+  background-color: #b52b65;
+  font-size: 1.2em;
+  font-family: "Hammersmith One", sans-serif;
+  margin-left: 25px;
+}
+
 .about-project p {
   display: flex;
   align-items: center;
   height: 70px;
-  color: #ffd4d3;
+  color: #e7bbd5;
   margin: 0 0;
 }
 
@@ -136,7 +165,8 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 10em;
+  margin: 10em 7em 5em 7em;
+  background-color: #3c2c3e;
 }
 
 .projetos-info img {
@@ -145,14 +175,14 @@ p {
 }
 
 .projeto {
-  margin: 50px 90px 60px 90px;
+  margin: 50px 70px 60px 70px;
   max-width: 350px;
   transition: 0.5s ease-in-out;
 }
 
 .single-project {
   display: flex;
-  background-color: #3c2c3e;
+  background-color: #322233;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -182,7 +212,7 @@ p {
 .wrapper ul li {
   width: 65px;
   height: 65px;
-  margin-right: 40px;
+  margin-right: 25px;
   margin-top: 30px;
   text-align: center;
   cursor: pointer;
@@ -261,7 +291,7 @@ p {
 
 /* media queries */
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1100px) {
   .container {
     height: 300px;
     width: 100%;
@@ -276,7 +306,6 @@ p {
     flex-direction: row;
     left: 0;
     top: 0;
-    right: 11%;
     background-color: #59405c;
     position: fixed;
   }
@@ -297,11 +326,6 @@ p {
     width: 200px;
   }
 
-  .sobre img {
-    width: 100px;
-    height: 110px;
-  }
-
   .sobre-p {
     padding: 6px;
     font-size: 0.8em;
@@ -309,11 +333,7 @@ p {
     flex-direction: column;
   }
 
-  .tags {
-    flex-direction: column;
-  }
-
-  .tag span {
+  .projetos .tag span {
     font-size: 1.5em;
     margin-left: 0px;
   }
@@ -354,8 +374,8 @@ p {
 
   .sobre-title,
   .projetos-title {
-    font-size: 1em;
-    margin: 0;
+    font-size: 2em;
+    margin: 10px 0;
   }
 
   .projetos-info a,
@@ -389,6 +409,18 @@ p {
 
   .wrapper ul li:hover .fa {
     transform: scale(0.7);
+  }
+
+  .me {
+    position: absolute;
+    right: 200px;
+    top: 500px;
+    width: 300px;
+  }
+
+  .tags {
+    right: 490px;
+    top: 550px;
   }
 }
 
@@ -428,6 +460,7 @@ p {
 
   .sobre-p {
     width: 250px;
+    font-size: 0.8em;
     flex-direction: column;
   }
 
