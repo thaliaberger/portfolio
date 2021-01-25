@@ -9,7 +9,7 @@ function handleScroll() {
     ? (chevron.style.opacity = "0")
     : (chevron.style.opacity = "1");
 
-  doc.scrollTop > 1100 && doc.scrollTop < 2400
+  doc.scrollTop > 1100 && doc.scrollTop < 2000
     ? (arrow.style.display = "block")
     : (arrow.style.display = "none");
 }
