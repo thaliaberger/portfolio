@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 
 @keyframes seta {
@@ -14,7 +13,10 @@
 }
 
 body {
-  background-color: #59405c;
+  background-color: #2d2d2f;
+  background-image: url("./images/Soon!.png");
+  background-size: contain;
+  background-attachment: fixed;
   font-family: "Montserrat", sans-serif;
   margin: 0 0;
 }
@@ -22,70 +24,93 @@ body {
 .header {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  margin: 200px;
 }
 
 .header a {
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-decoration: none;
-  color: #ffd4d3;
-  margin: 0 30px 0 30px;
+  color: #d0d0d0;
+  margin: 50px 30px 0 30px;
+  transition: 0.3s ease-in-out;
+  font-weight: 100;
 }
 
 .header a:hover {
-  color: #b52b65;
+  color: #fdd402;
   cursor: pointer;
 }
 
 .header p {
+  color: #d0d0d0;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.header-links {
+  color: #d0d0d0;
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+.hello {
   display: flex;
-  margin: 50px 0 0 45px;
-  width: 500px;
+  align-items: center;
 }
 
 h1 {
-  color: #ffd4d3;
-  font-size: 3em;
-  font-weight: 100;
-  letter-spacing: 10px;
-  margin: 60px 0 60px 20px;
+  color: #fdd402;
+  font-size: 5em;
+  margin: 0;
+  padding: 0;
+  font-family: "Jomhuria", cursive;
+  letter-spacing: 4px;
+  height: 60px;
 }
 
 h4 {
-  color: #b52b65;
-  font-size: 5em;
-  background-color: #3c2c3e;
-  margin: 0 0;
-  padding: 0 20px;
-  font-family: "Hammersmith One", sans-serif;
+  color: #d0d0d0;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.lua {
+  width: 25;
+  margin: 0 5px;
 }
 
 /* SOBRE */
 
 .tags span {
-  color: #3c2c3e;
-  background-color: #b52b65;
+  color: #242424;
+  background-color: #444444;
   font-size: 1.2em;
-  font-family: "Hammersmith One", sans-serif;
-  margin: 0;
+  font-weight: 600;
+  margin: 0 6px;
 }
 
 .tags p {
-  text-align: end;
+  text-align: start;
 }
 
 .tags {
+  display: flex;
   position: absolute;
-  right: 540px;
-  top: 750px;
+  left: 130px;
+  top: 1080px;
 }
 
 .sobre-title {
-  color: #ffd4d3;
+  color: #7a7a7a;
+  border-bottom: 1px solid #7a7a7a;
   font-size: 2em;
-  font-weight: lighter;
-  letter-spacing: 6px;
+  letter-spacing: 2px;
   margin: 10px 0;
+  font-weight: 400;
 }
 
 .sobre {
@@ -93,43 +118,45 @@ h4 {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin-top: 15em;
-  background-color: #3c2c3e;
+  margin: 20em auto 0 auto;
+  background-color: #303030;
   padding: 30px 0;
-  width: 80%;
+  width: 75%;
 }
 
 .sobre-column {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-right: 300px;
+  margin-left: 250px;
 }
 
 .sobre-p {
   align-items: center;
   text-align: start;
+  font-weight: 400;
   width: 400px;
-  color: #e7bbd5;
+  color: #7e7e7e;
   letter-spacing: 1px;
   padding: 10px 0;
 }
 
 .me {
   position: absolute;
-  right: 200px;
-  top: 700px;
+  left: 120px;
+  top: 720px;
   width: 350px;
 }
 
 /* PROJETOS */
 
 .projetos-title {
-  color: #ffd4d3;
+  color: #808080;
+  border-bottom: 1px solid #808080;
   font-size: 2em;
-  font-weight: lighter;
-  letter-spacing: 6px;
-  margin: 60px 660px 20px 0;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 200px auto 50px auto;
 }
 
 .projetos-info a,
@@ -140,8 +167,8 @@ p {
 }
 
 .about-project span {
-  color: #2f1f31;
-  background-color: #6e4f6e;
+  color: #acacac;
+  background-color: #3a3a3a;
   margin: 0 4px;
   font-size: 1.1em;
   padding: 0 5px;
@@ -150,7 +177,7 @@ p {
 }
 
 .projetos .tag span {
-  color: #ffd4d3;
+  color: #acacac;
   font-size: 1.3em;
   font-family: "Hammersmith One", sans-serif;
 }
@@ -163,7 +190,7 @@ p {
   width: 250px;
   height: 80px;
   line-height: 25px;
-  color: #e7bbd5;
+  color: #505050;
   margin: 0;
 }
 
@@ -172,8 +199,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 10em 8em 5em 0;
-  background-color: #3c2c3e;
+  margin: 0 auto;
 }
 
 .projetos-info img {
@@ -182,7 +208,7 @@ p {
 }
 
 .projeto {
-  margin: 50px 0px 50px 60px;
+  margin: 50px 0px;
   max-width: 300px;
   transition: 0.5s ease-in-out;
 }
@@ -197,7 +223,8 @@ p {
 
 .projetos {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0 150px;
+  grid-template-columns: 1fr 1fr;
 }
 
 /* ICONS */
@@ -223,14 +250,14 @@ p {
   text-align: center;
   cursor: pointer;
   border-radius: 50%;
-  border: 5px solid #3c2c3e;
-  background-color: #3c2c3e;
+  border: 5px solid #383838;
+  background-color: #383838;
   float: left;
   transition: all 0.5s ease;
 }
 
 .wrapper ul li .fa {
-  color: #ffd4d3;
+  color: #838383;
   margin-top: 16px;
   transform: scale(0.9);
   transition: all 0.5s ease;
@@ -239,12 +266,16 @@ p {
 .wrapper ul li:hover .fa {
   transform: scale(1.2);
 }
+.wrapper ul li:hover {
+  border: 5px solid #494949;
+  background-color: #494949;
+}
 
 .arrow {
-  color: #ffd4d3;
+  color: #5a5a5a;
   position: fixed;
   bottom: 50px;
-  left: 30px;
+  left: 50px;
   animation: seta 0.5s ease-in 0s infinite alternate;
 }
 
@@ -256,7 +287,7 @@ p {
 
 .overlay--pseudo-elements:before {
   content: "";
-  background-color: rgba(27, 10, 29, 0.9);
+  background-color: rgba(29, 29, 29, 0.9);
   opacity: 0;
   position: absolute;
   top: 0;
@@ -273,7 +304,7 @@ p {
 }
 
 .demo {
-  background-color: #59405c;
+  background-color: #242424;
   width: 70px;
   opacity: 0;
   position: absolute;
@@ -286,7 +317,7 @@ p {
 }
 
 .demo .fa {
-  color: #ffd4d3;
+  color: #a8a8a8;
   font-size: 2em;
   margin-left: 10px;
 }
@@ -311,7 +342,7 @@ p {
     flex-direction: row;
     left: 0;
     top: 0;
-    background-color: #59405c;
+    background-color: #2d2d2f;
     position: fixed;
   }
 
@@ -352,25 +383,6 @@ p {
     height: 240px;
   }
 
-  h1 {
-    font-size: 2em;
-    margin: 100px 0 10px 20px;
-  }
-
-  h4 {
-    font-size: 3em;
-    padding: 0 20px;
-  }
-  .header p {
-    margin: 10px 0 0 10px;
-    width: 80%;
-  }
-
-  .header a {
-    font-size: 1.5em;
-    margin: 0 10px 0 10px;
-  }
-
   .single-project {
     width: 400px;
     margin: 0;
@@ -406,8 +418,8 @@ p {
     margin-right: 0px;
     margin-top: 0px;
     border-radius: 50%;
-    border: 1px solid #3c2c3e;
-    background-color: #3c2c3e;
+    border: 1px solid #2d2d2f;
+    background-color: #2d2d2f;
   }
 
   .wrapper ul li .fa {
@@ -421,7 +433,7 @@ p {
 
   .me {
     position: absolute;
-    right: 200px;
+    left: 0;
     top: 600px;
     width: 300px;
   }
@@ -429,6 +441,9 @@ p {
   .tags {
     right: 490px;
     top: 600px;
+  }
+  .hello {
+    width: 120px;
   }
 }
 
@@ -444,35 +459,9 @@ p {
     top: 750px;
   }
 
-  .header a {
-    font-size: 1.2em;
-    text-decoration: none;
-    color: #ffd4d3;
-    margin: 0 10px 0 10px;
-  }
-
-  .header p {
-    display: flex;
-    margin: 50px 0 0 45px;
-    width: 500px;
-  }
-
-  h1 {
-    color: #ffd4d3;
-    font-size: 3em;
-    font-weight: 100;
-    letter-spacing: 10px;
-    margin: 60px 0 60px 20px;
-  }
-
-  h4 {
-    font-size: 5.2em;
-  }
-
   .sobre-title {
-    color: #ffd4d3;
+    color: #8f8f8f;
     font-size: 2em;
-    font-weight: lighter;
     letter-spacing: 6px;
     margin: 10px 0;
   }
@@ -483,7 +472,7 @@ p {
     justify-content: center;
     flex-direction: row;
     margin-top: 15em;
-    background-color: #3c2c3e;
+    background-color: #2d2d2f;
     padding: 30px 0;
     width: 80%;
   }
@@ -509,10 +498,6 @@ p {
     top: 550px;
   }
 
-  .header a {
-    font-size: 0.6em;
-  }
-
   .projetos-info {
     margin: 10em 2em 5em 2em;
   }
@@ -525,16 +510,6 @@ p {
     width: 200px;
     padding: 10px 0;
   }
-
-  h1 {
-    font-size: 1em;
-    margin: 60px 0 20px 30px;
-  }
-
-  h4 {
-    font-size: 2em;
-  }
-
   .single-project {
     width: 300px;
     margin: 0;
@@ -585,7 +560,7 @@ p {
     flex-direction: row;
     left: 0;
     top: 0;
-    background-color: #59405c;
+    background-color: #242424;
     width: 100%;
   }
 
@@ -615,7 +590,7 @@ p {
     align-items: center;
     text-align: start;
     width: 200px;
-    color: #e7bbd5;
+    color: #979797;
     letter-spacing: 1px;
     padding: 10px 0;
   }

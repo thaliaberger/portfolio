@@ -9,11 +9,14 @@ function handleScroll() {
     ? (chevron.style.opacity = "0")
     : (chevron.style.opacity = "1");
 
-  doc.scrollTop > 1100 && doc.scrollTop < 2000
+  doc.scrollTop > 1100 && doc.scrollTop < 2500
     ? (arrow.style.display = "block")
     : (arrow.style.display = "none");
 }
 
+document.getElementById("chevron").onclick = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
 window.onload = () => {
   if (window.matchMedia("(max-width: 340px)").matches) {
     document.getElementById("sobre").onclick = () => {
@@ -38,8 +41,4 @@ window.onload = () => {
       window.scrollTo({ top: 1300, behavior: "smooth" });
     };
   }
-
-  document.getElementById("chevron").onclick = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 };
